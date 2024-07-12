@@ -1,0 +1,1121 @@
+Analysis & Synthesis report for lab8
+Sat Jun 22 13:49:30 2024
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. Analysis & Synthesis RAM Summary
+  8. State Machine - |lab8|Datapath_Multi_cycle_Processor:comb_30|controller:comp20|state
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Registers Added for RAM Pass-Through Logic
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Source assignments for Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|altsyncram:Regfile_rtl_0|altsyncram_l3j1:auto_generated
+ 16. Source assignments for Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|altsyncram:Regfile_rtl_1|altsyncram_l3j1:auto_generated
+ 17. Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|Mux_32_bit:comp2
+ 18. Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp4
+ 19. Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp5
+ 20. Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|Mux_32_bit:comp6
+ 21. Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|Mux_5_bit:comp8
+ 22. Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp11
+ 23. Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp12
+ 24. Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|Mux_32_bit:comp13
+ 25. Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|Mux4_32_bit:comp14
+ 26. Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|alu:comp15
+ 27. Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp16
+ 28. Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|Mux4_32_bit:comp19
+ 29. Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|controller:comp20
+ 30. Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|ALU_Control:comp21
+ 31. Parameter Settings for Inferred Entity Instance: Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|altsyncram:Regfile_rtl_0
+ 32. Parameter Settings for Inferred Entity Instance: Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|altsyncram:Regfile_rtl_1
+ 33. altsyncram Parameter Settings by Entity Instance
+ 34. Port Connectivity Checks: "Datapath_Multi_cycle_Processor:comb_30|Mux4_32_bit:comp19"
+ 35. Port Connectivity Checks: "Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp16"
+ 36. Port Connectivity Checks: "Datapath_Multi_cycle_Processor:comb_30|Mux4_32_bit:comp14"
+ 37. Port Connectivity Checks: "Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp12"
+ 38. Port Connectivity Checks: "Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp11"
+ 39. Port Connectivity Checks: "Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp5"
+ 40. Port Connectivity Checks: "Datapath_Multi_cycle_Processor:comb_30"
+ 41. Analysis & Synthesis Messages
+ 42. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++------------------------------------+------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Jun 22 13:49:30 2024    ;
+; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Full Version ;
+; Revision Name                      ; lab8                                     ;
+; Top-level Entity Name              ; lab8                                     ;
+; Family                             ; Cyclone II                               ;
+; Total logic elements               ; 4,084                                    ;
+;     Total combinational functions  ; 2,020                                    ;
+;     Dedicated logic registers      ; 2,305                                    ;
+; Total registers                    ; 2305                                     ;
+; Total pins                         ; 104                                      ;
+; Total virtual pins                 ; 0                                        ;
+; Total memory bits                  ; 2,048                                    ;
+; Embedded Multiplier 9-bit elements ; 0                                        ;
+; Total PLLs                         ; 0                                        ;
++------------------------------------+------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                            ;
++----------------------------------------------------------------+--------------------+--------------------+
+; Option                                                         ; Setting            ; Default Value      ;
++----------------------------------------------------------------+--------------------+--------------------+
+; Device                                                         ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                          ; lab8               ; lab8               ;
+; Family name                                                    ; Cyclone II         ; Stratix II         ;
+; Use Generated Physical Constraints File                        ; Off                ;                    ;
+; Use smart compilation                                          ; Off                ; Off                ;
+; Restructure Multiplexers                                       ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                            ; Off                ; Off                ;
+; Preserve fewer node names                                      ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                      ; Off                ; Off                ;
+; Verilog Version                                                ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                   ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                       ; Auto               ; Auto               ;
+; Safe State Machine                                             ; Off                ; Off                ;
+; Extract Verilog State Machines                                 ; On                 ; On                 ;
+; Extract VHDL State Machines                                    ; On                 ; On                 ;
+; Ignore Verilog initial constructs                              ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                     ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                 ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                        ; On                 ; On                 ;
+; Parallel Synthesis                                             ; Off                ; Off                ;
+; DSP Block Balancing                                            ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                             ; On                 ; On                 ;
+; Power-Up Don't Care                                            ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                   ; Off                ; Off                ;
+; Remove Duplicate Registers                                     ; On                 ; On                 ;
+; Ignore CARRY Buffers                                           ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                         ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                          ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                      ; Off                ; Off                ;
+; Ignore LCELL Buffers                                           ; Off                ; Off                ;
+; Ignore SOFT Buffers                                            ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                 ; Off                ; Off                ;
+; Optimization Technique                                         ; Balanced           ; Balanced           ;
+; Carry Chain Length                                             ; 70                 ; 70                 ;
+; Auto Carry Chains                                              ; On                 ; On                 ;
+; Auto Open-Drain Pins                                           ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                          ; Off                ; Off                ;
+; Auto ROM Replacement                                           ; On                 ; On                 ;
+; Auto RAM Replacement                                           ; On                 ; On                 ;
+; Auto Shift Register Replacement                                ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                  ; On                 ; On                 ;
+; Strict RAM Replacement                                         ; Off                ; Off                ;
+; Allow Synchronous Control Signals                              ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                         ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                              ; Off                ; Off                ;
+; Auto Resource Sharing                                          ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                             ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                             ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                  ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing            ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives              ; Off                ; Off                ;
+; Timing-Driven Synthesis                                        ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report             ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                             ; Off                ; Off                ;
+; Synchronization Register Chain Length                          ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                              ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report       ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report      ; 100                ; 100                ;
+; Clock MUX Protection                                           ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                    ; Off                ; Off                ;
+; Block Design Naming                                            ; Auto               ; Auto               ;
+; SDC constraint protection                                      ; Off                ; Off                ;
+; Synthesis Effort                                               ; Auto               ; Auto               ;
+; Allows Asynchronous Clear Usage For Shift Register Replacement ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                             ; Medium             ; Medium             ;
++----------------------------------------------------------------+--------------------+--------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                 ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                       ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+
+; lab8.v                           ; yes             ; User Verilog HDL File        ; D:/Year 3/Semester 2/DSD/lab/week7/lab8/lab8.v                     ;
+; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/altsyncram.tdf        ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/stratix_ram_block.inc ;
+; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/lpm_mux.inc           ;
+; lpm_decode.inc                   ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/lpm_decode.inc        ;
+; aglobal90.inc                    ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/aglobal90.inc         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/a_rdenreg.inc         ;
+; altrom.inc                       ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/altrom.inc            ;
+; altram.inc                       ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/altram.inc            ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/altdpram.inc          ;
+; altqpram.inc                     ; yes             ; Megafunction                 ; c:/altera/90/quartus/libraries/megafunctions/altqpram.inc          ;
+; db/altsyncram_l3j1.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/Year 3/Semester 2/DSD/lab/week7/lab8/db/altsyncram_l3j1.tdf     ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Estimated Total logic elements              ; 4,084  ;
+;                                             ;        ;
+; Total combinational functions               ; 2020   ;
+; Logic element usage by number of LUT inputs ;        ;
+;     -- 4 input functions                    ; 1757   ;
+;     -- 3 input functions                    ; 149    ;
+;     -- <=2 input functions                  ; 114    ;
+;                                             ;        ;
+; Logic elements by mode                      ;        ;
+;     -- normal mode                          ; 1988   ;
+;     -- arithmetic mode                      ; 32     ;
+;                                             ;        ;
+; Total registers                             ; 2305   ;
+;     -- Dedicated logic registers            ; 2305   ;
+;     -- I/O registers                        ; 0      ;
+;                                             ;        ;
+; I/O pins                                    ; 104    ;
+; Total memory bits                           ; 2048   ;
+; Maximum fan-out node                        ; KEY[2] ;
+; Maximum fan-out                             ; 2369   ;
+; Total fan-out                               ; 15374  ;
+; Average fan-out                             ; 3.42   ;
++---------------------------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                      ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------+--------------+
+; |lab8                                        ; 2020 (0)          ; 2305 (0)     ; 2048        ; 0            ; 0       ; 0         ; 104  ; 0            ; |lab8                                                                                                                    ; work         ;
+;    |Datapath_Multi_cycle_Processor:comb_30|  ; 1964 (1)          ; 2305 (0)     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30                                                                             ; work         ;
+;       |ALU_Control:comp21|                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|ALU_Control:comp21                                                          ; work         ;
+;       |Data_Memory:comp3|                    ; 1438 (1438)       ; 2048 (2048)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Data_Memory:comp3                                                           ; work         ;
+;       |Mux4_32_bit:comp14|                   ; 47 (47)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Mux4_32_bit:comp14                                                          ; work         ;
+;       |Mux4_32_bit:comp19|                   ; 72 (72)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Mux4_32_bit:comp19                                                          ; work         ;
+;       |Mux_32_bit:comp13|                    ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Mux_32_bit:comp13                                                           ; work         ;
+;       |Mux_32_bit:comp2|                     ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Mux_32_bit:comp2                                                            ; work         ;
+;       |Mux_32_bit:comp6|                     ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Mux_32_bit:comp6                                                            ; work         ;
+;       |Mux_5_bit:comp8|                      ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Mux_5_bit:comp8                                                             ; work         ;
+;       |Program_Counter:comp1|                ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Program_Counter:comp1                                                       ; work         ;
+;       |Register_File:comp7|                  ; 8 (8)             ; 38 (38)      ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7                                                         ; work         ;
+;          |altsyncram:Regfile_rtl_0|          ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|altsyncram:Regfile_rtl_0                                ; work         ;
+;             |altsyncram_l3j1:auto_generated| ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|altsyncram:Regfile_rtl_0|altsyncram_l3j1:auto_generated ; work         ;
+;          |altsyncram:Regfile_rtl_1|          ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|altsyncram:Regfile_rtl_1                                ; work         ;
+;             |altsyncram_l3j1:auto_generated| ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|altsyncram:Regfile_rtl_1|altsyncram_l3j1:auto_generated ; work         ;
+;       |alu:comp15|                           ; 138 (138)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|alu:comp15                                                                  ; work         ;
+;       |controller:comp20|                    ; 31 (31)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|controller:comp20                                                           ; work         ;
+;       |holding_reg:comp11|                   ; 34 (34)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp11                                                          ; work         ;
+;       |holding_reg:comp12|                   ; 34 (34)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp12                                                          ; work         ;
+;       |holding_reg:comp16|                   ; 35 (35)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp16                                                          ; work         ;
+;       |holding_reg:comp4|                    ; 33 (33)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp4                                                           ; work         ;
+;       |holding_reg:comp5|                    ; 10 (10)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp5                                                           ; work         ;
+;    |hex_ssd:C1|                              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|hex_ssd:C1                                                                                                         ; work         ;
+;    |hex_ssd:C2|                              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|hex_ssd:C2                                                                                                         ; work         ;
+;    |hex_ssd:C3|                              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|hex_ssd:C3                                                                                                         ; work         ;
+;    |hex_ssd:C4|                              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|hex_ssd:C4                                                                                                         ; work         ;
+;    |hex_ssd:C5|                              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|hex_ssd:C5                                                                                                         ; work         ;
+;    |hex_ssd:C6|                              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|hex_ssd:C6                                                                                                         ; work         ;
+;    |hex_ssd:C7|                              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|hex_ssd:C7                                                                                                         ; work         ;
+;    |hex_ssd:C8|                              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|hex_ssd:C8                                                                                                         ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                                         ;
++-------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+---------------------------------------------+
+; Name                                                                                                                          ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                                         ;
++-------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+---------------------------------------------+
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|altsyncram:Regfile_rtl_0|altsyncram_l3j1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024 ; db/lab8.ram0_Register_File_605be989.hdl.mif ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|altsyncram:Regfile_rtl_1|altsyncram_l3j1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024 ; db/lab8.ram0_Register_File_605be989.hdl.mif ;
++-------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+---------------------------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |lab8|Datapath_Multi_cycle_Processor:comb_30|controller:comp20|state                                                                    ;
++---------------+----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+---------------+
+; Name          ; state.s0 ; state.s10 ; state.s9 ; state.s8 ; state.s7 ; state.s6 ; state.s5 ; state.s4 ; state.s3 ; state.s2 ; state.s1 ; state.s_Reset ;
++---------------+----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+---------------+
+; state.s_Reset ; 0        ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0             ;
+; state.s1      ; 0        ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 1             ;
+; state.s2      ; 0        ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 1             ;
+; state.s3      ; 0        ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 1             ;
+; state.s4      ; 0        ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 1             ;
+; state.s5      ; 0        ; 0         ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 1             ;
+; state.s6      ; 0        ; 0         ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1             ;
+; state.s7      ; 0        ; 0         ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1             ;
+; state.s8      ; 0        ; 0         ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1             ;
+; state.s9      ; 0        ; 0         ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1             ;
+; state.s10     ; 0        ; 1         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1             ;
+; state.s0      ; 1        ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1             ;
++---------------+----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+---------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                          ;
++--------------------------------------------------------+------------------------------------------------------------+------------------------+
+; Latch Name                                             ; Latch Enable Signal                                        ; Free of Timing Hazards ;
++--------------------------------------------------------+------------------------------------------------------------+------------------------+
+; Datapath_Multi_cycle_Processor:comb_30|alu:comp15|zero ; Datapath_Multi_cycle_Processor:comb_30|alu:comp15|Decoder0 ; yes                    ;
+; Number of user-specified and inferred latches = 1      ;                                                            ;                        ;
++--------------------------------------------------------+------------------------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                            ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+; Register name                                                                   ; Reason for Removal                                                                          ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+; Datapath_Multi_cycle_Processor:comb_30|controller:comp20|ALUop[2]               ; Merged with Datapath_Multi_cycle_Processor:comb_30|controller:comp20|ALUSrcB[0]             ;
+; Datapath_Multi_cycle_Processor:comb_30|controller:comp20|PCWrcond               ; Merged with Datapath_Multi_cycle_Processor:comb_30|controller:comp20|PCSource[0]            ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[2]  ; Merged with Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp4|content[16]            ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[4]  ; Merged with Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp4|content[17]            ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[6]  ; Merged with Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp4|content[18]            ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[8]  ; Merged with Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp4|content[19]            ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[10] ; Merged with Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp4|content[20]            ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[2]  ; Merged with Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp4|content[21]            ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[4]  ; Merged with Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp4|content[22]            ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[6]  ; Merged with Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp4|content[23]            ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[8]  ; Merged with Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp4|content[24]            ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[10] ; Merged with Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp4|content[25]            ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[19] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[19] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[0]  ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[0]  ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[1]  ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[1]  ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[3]  ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[3]  ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[5]  ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[5]  ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[7]  ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[7]  ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[9]  ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[9]  ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[11] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[11] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[12] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[12] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[13] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[13] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[14] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[14] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[15] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[15] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[16] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[16] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[17] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[17] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[18] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[18] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[20] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[20] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[21] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[21] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[22] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[22] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[23] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[23] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[24] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[24] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[25] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[25] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[26] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[26] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[27] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[27] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[28] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[28] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[29] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[29] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[30] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[30] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[31] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[31] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[32] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[32] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[33] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[33] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[34] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[34] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[35] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[35] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[36] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[36] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[37] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[37] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[38] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[38] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[39] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[39] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[40] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[40] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[41] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[41] ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[42] ; Merged with Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[42] ;
+; Datapath_Multi_cycle_Processor:comb_30|controller:comp20|state~27               ; Lost fanout                                                                                 ;
+; Datapath_Multi_cycle_Processor:comb_30|controller:comp20|state~28               ; Lost fanout                                                                                 ;
+; Datapath_Multi_cycle_Processor:comb_30|controller:comp20|state~29               ; Lost fanout                                                                                 ;
+; Datapath_Multi_cycle_Processor:comb_30|controller:comp20|state~30               ; Lost fanout                                                                                 ;
+; Total Number of Removed Registers = 54                                          ;                                                                                             ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 2305  ;
+; Number of registers using Synchronous Clear  ; 2     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 59    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 2102  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                  ;
++---------------------------------------------------------------------+---------+
+; Inverted Register                                                   ; Fan out ;
++---------------------------------------------------------------------+---------+
+; Datapath_Multi_cycle_Processor:comb_30|controller:comp20|ALUop[1]   ; 14      ;
+; Datapath_Multi_cycle_Processor:comb_30|controller:comp20|ALUSrcB[0] ; 38      ;
+; Datapath_Multi_cycle_Processor:comb_30|controller:comp20|reset      ; 110     ;
+; Datapath_Multi_cycle_Processor:comb_30|controller:comp20|IRwrite    ; 11      ;
+; Total number of inverted registers = 4                              ;         ;
++---------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Added for RAM Pass-Through Logic                                                                                                             ;
++---------------------------------------------------------------------------------+----------------------------------------------------------------------+
+; Register Name                                                                   ; RAM Name                                                             ;
++---------------------------------------------------------------------------------+----------------------------------------------------------------------+
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[0]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[1]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[2]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[3]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[4]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[5]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[6]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[7]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[8]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[9]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[10] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[11] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[12] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[13] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[14] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[15] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[16] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[17] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[18] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[19] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[20] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[21] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[22] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[23] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[24] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[25] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[26] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[27] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[28] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[29] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[30] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[31] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[32] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[33] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[34] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[35] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[36] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[37] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[38] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[39] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[40] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[41] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_0_bypass[42] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[0]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[1]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[2]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[3]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[4]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[5]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[6]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[7]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[8]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[9]  ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[10] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[11] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[12] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[13] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[14] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[15] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[16] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[17] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[18] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[19] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[20] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[21] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[22] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[23] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[24] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[25] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[26] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[27] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[28] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[29] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[30] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[31] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[32] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[33] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[34] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[35] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[36] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[37] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[38] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[39] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[40] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[41] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
+; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile_1_bypass[42] ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1 ;
++---------------------------------------------------------------------------------+----------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Program_Counter:comp1|PC_out[26] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Program_Counter:comp1|PC_out[31] ;
+; 3:1                ; 22 bits   ; 44 LEs        ; 22 LEs               ; 22 LEs                 ; Yes        ; |lab8|Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp4|content[9]     ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |lab8|Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp11|content[31]   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |lab8|Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp12|content[23]   ;
+; 4:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; No         ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Mux4_32_bit:comp19|mux_out[5]    ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Mux4_32_bit:comp14|mux_out[0]    ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Mux4_32_bit:comp14|mux_out[0]    ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |lab8|Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp4|content~42     ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 0 LEs                ; 96 LEs                 ; No         ; |lab8|Datapath_Multi_cycle_Processor:comb_30|alu:comp15|Add0                  ;
+; 8:1                ; 32 bits   ; 160 LEs       ; 64 LEs               ; 96 LEs                 ; No         ; |lab8|Datapath_Multi_cycle_Processor:comb_30|alu:comp15|Mux10                 ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; No         ; |lab8|Datapath_Multi_cycle_Processor:comb_30|alu:comp15|Add0                  ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |lab8|Datapath_Multi_cycle_Processor:comb_30|Mux4_32_bit:comp14|mux_out[4]    ;
+; 65:1               ; 4 bits    ; 172 LEs       ; 16 LEs               ; 156 LEs                ; No         ; |lab8|Datapath_Multi_cycle_Processor:comb_30|controller:comp20|state~12       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|altsyncram:Regfile_rtl_0|altsyncram_l3j1:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                          ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                           ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|altsyncram:Regfile_rtl_1|altsyncram_l3j1:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                          ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                           ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|Mux_32_bit:comp2 ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp4 ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp5 ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|Mux_32_bit:comp6 ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|Mux_5_bit:comp8 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; N              ; 5     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp11 ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp12 ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|Mux_32_bit:comp13 ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|Mux4_32_bit:comp14 ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|alu:comp15 ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; ALU_OP_ADD     ; 000   ; Unsigned Binary                                                       ;
+; ALU_OP_SUB     ; 001   ; Unsigned Binary                                                       ;
+; ALU_OP_AND     ; 010   ; Unsigned Binary                                                       ;
+; ALU_OP_OR      ; 011   ; Unsigned Binary                                                       ;
+; ALU_OP_XOR     ; 100   ; Unsigned Binary                                                       ;
+; ALU_OP_LW      ; 101   ; Unsigned Binary                                                       ;
+; ALU_OP_SW      ; 110   ; Unsigned Binary                                                       ;
+; ALU_OP_BEQ     ; 111   ; Unsigned Binary                                                       ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp16 ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|Mux4_32_bit:comp19 ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|controller:comp20 ;
++----------------+--------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value  ; Type                                                                        ;
++----------------+--------+-----------------------------------------------------------------------------+
+; s0             ; 0000   ; Unsigned Binary                                                             ;
+; s1             ; 0001   ; Unsigned Binary                                                             ;
+; s2             ; 0010   ; Unsigned Binary                                                             ;
+; s3             ; 0011   ; Unsigned Binary                                                             ;
+; s4             ; 0100   ; Unsigned Binary                                                             ;
+; s5             ; 0101   ; Unsigned Binary                                                             ;
+; s6             ; 0110   ; Unsigned Binary                                                             ;
+; s7             ; 0111   ; Unsigned Binary                                                             ;
+; s8             ; 1000   ; Unsigned Binary                                                             ;
+; s9             ; 1001   ; Unsigned Binary                                                             ;
+; s10            ; 1010   ; Unsigned Binary                                                             ;
+; s_Reset        ; 1011   ; Unsigned Binary                                                             ;
+; J              ; 000010 ; Unsigned Binary                                                             ;
+; R              ; 000000 ; Unsigned Binary                                                             ;
+; BEQ            ; 000100 ; Unsigned Binary                                                             ;
+; BNE            ; 000101 ; Unsigned Binary                                                             ;
+; SW             ; 101011 ; Unsigned Binary                                                             ;
+; LW             ; 100011 ; Unsigned Binary                                                             ;
+; ADDI           ; 001000 ; Unsigned Binary                                                             ;
+; OP_R_TYPE      ; 000    ; Unsigned Binary                                                             ;
+; OP_I_TYPE      ; 001    ; Unsigned Binary                                                             ;
+; OP_J_TYPE      ; 010    ; Unsigned Binary                                                             ;
+; OP_BR_TYPE     ; 011    ; Unsigned Binary                                                             ;
+; OP_IF_TYPE     ; 100    ; Unsigned Binary                                                             ;
+; OP_ID_TYPE     ; 101    ; Unsigned Binary                                                             ;
+; OP_RS_TYPE     ; 110    ; Unsigned Binary                                                             ;
++----------------+--------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath_Multi_cycle_Processor:comb_30|ALU_Control:comp21 ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; OP_R_TYPE      ; 000   ; Unsigned Binary                                                               ;
+; OP_I_TYPE      ; 001   ; Unsigned Binary                                                               ;
+; OP_J_TYPE      ; 010   ; Unsigned Binary                                                               ;
+; OP_BR_TYPE     ; 011   ; Unsigned Binary                                                               ;
+; OP_IF_TYPE     ; 100   ; Unsigned Binary                                                               ;
+; OP_ID_TYPE     ; 101   ; Unsigned Binary                                                               ;
+; OP_RS_TYPE     ; 110   ; Unsigned Binary                                                               ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|altsyncram:Regfile_rtl_0 ;
++------------------------------------+---------------------------------------------+---------------------------------------------------+
+; Parameter Name                     ; Value                                       ; Type                                              ;
++------------------------------------+---------------------------------------------+---------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                           ; Untyped                                           ;
+; AUTO_CARRY_CHAINS                  ; ON                                          ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                         ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS                ; ON                                          ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                         ; IGNORE_CASCADE                                    ;
+; WIDTH_BYTEENA                      ; 1                                           ; Untyped                                           ;
+; OPERATION_MODE                     ; DUAL_PORT                                   ; Untyped                                           ;
+; WIDTH_A                            ; 32                                          ; Untyped                                           ;
+; WIDTHAD_A                          ; 5                                           ; Untyped                                           ;
+; NUMWORDS_A                         ; 32                                          ; Untyped                                           ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                ; Untyped                                           ;
+; ADDRESS_ACLR_A                     ; NONE                                        ; Untyped                                           ;
+; OUTDATA_ACLR_A                     ; NONE                                        ; Untyped                                           ;
+; WRCONTROL_ACLR_A                   ; NONE                                        ; Untyped                                           ;
+; INDATA_ACLR_A                      ; NONE                                        ; Untyped                                           ;
+; BYTEENA_ACLR_A                     ; NONE                                        ; Untyped                                           ;
+; WIDTH_B                            ; 32                                          ; Untyped                                           ;
+; WIDTHAD_B                          ; 5                                           ; Untyped                                           ;
+; NUMWORDS_B                         ; 32                                          ; Untyped                                           ;
+; INDATA_REG_B                       ; CLOCK1                                      ; Untyped                                           ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                      ; Untyped                                           ;
+; RDCONTROL_REG_B                    ; CLOCK1                                      ; Untyped                                           ;
+; ADDRESS_REG_B                      ; CLOCK0                                      ; Untyped                                           ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                ; Untyped                                           ;
+; BYTEENA_REG_B                      ; CLOCK1                                      ; Untyped                                           ;
+; INDATA_ACLR_B                      ; NONE                                        ; Untyped                                           ;
+; WRCONTROL_ACLR_B                   ; NONE                                        ; Untyped                                           ;
+; ADDRESS_ACLR_B                     ; NONE                                        ; Untyped                                           ;
+; OUTDATA_ACLR_B                     ; NONE                                        ; Untyped                                           ;
+; RDCONTROL_ACLR_B                   ; NONE                                        ; Untyped                                           ;
+; BYTEENA_ACLR_B                     ; NONE                                        ; Untyped                                           ;
+; WIDTH_BYTEENA_A                    ; 1                                           ; Untyped                                           ;
+; WIDTH_BYTEENA_B                    ; 1                                           ; Untyped                                           ;
+; RAM_BLOCK_TYPE                     ; AUTO                                        ; Untyped                                           ;
+; BYTE_SIZE                          ; 8                                           ; Untyped                                           ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                   ; Untyped                                           ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                        ; Untyped                                           ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                        ; Untyped                                           ;
+; INIT_FILE                          ; db/lab8.ram0_Register_File_605be989.hdl.mif ; Untyped                                           ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                      ; Untyped                                           ;
+; MAXIMUM_DEPTH                      ; 0                                           ; Untyped                                           ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                      ; Untyped                                           ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                      ; Untyped                                           ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                      ; Untyped                                           ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                      ; Untyped                                           ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                             ; Untyped                                           ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                             ; Untyped                                           ;
+; ENABLE_ECC                         ; FALSE                                       ; Untyped                                           ;
+; DEVICE_FAMILY                      ; Cyclone II                                  ; Untyped                                           ;
+; CBXI_PARAMETER                     ; altsyncram_l3j1                             ; Untyped                                           ;
++------------------------------------+---------------------------------------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|altsyncram:Regfile_rtl_1 ;
++------------------------------------+---------------------------------------------+---------------------------------------------------+
+; Parameter Name                     ; Value                                       ; Type                                              ;
++------------------------------------+---------------------------------------------+---------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                           ; Untyped                                           ;
+; AUTO_CARRY_CHAINS                  ; ON                                          ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                         ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS                ; ON                                          ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                         ; IGNORE_CASCADE                                    ;
+; WIDTH_BYTEENA                      ; 1                                           ; Untyped                                           ;
+; OPERATION_MODE                     ; DUAL_PORT                                   ; Untyped                                           ;
+; WIDTH_A                            ; 32                                          ; Untyped                                           ;
+; WIDTHAD_A                          ; 5                                           ; Untyped                                           ;
+; NUMWORDS_A                         ; 32                                          ; Untyped                                           ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                ; Untyped                                           ;
+; ADDRESS_ACLR_A                     ; NONE                                        ; Untyped                                           ;
+; OUTDATA_ACLR_A                     ; NONE                                        ; Untyped                                           ;
+; WRCONTROL_ACLR_A                   ; NONE                                        ; Untyped                                           ;
+; INDATA_ACLR_A                      ; NONE                                        ; Untyped                                           ;
+; BYTEENA_ACLR_A                     ; NONE                                        ; Untyped                                           ;
+; WIDTH_B                            ; 32                                          ; Untyped                                           ;
+; WIDTHAD_B                          ; 5                                           ; Untyped                                           ;
+; NUMWORDS_B                         ; 32                                          ; Untyped                                           ;
+; INDATA_REG_B                       ; CLOCK1                                      ; Untyped                                           ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                      ; Untyped                                           ;
+; RDCONTROL_REG_B                    ; CLOCK1                                      ; Untyped                                           ;
+; ADDRESS_REG_B                      ; CLOCK0                                      ; Untyped                                           ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                ; Untyped                                           ;
+; BYTEENA_REG_B                      ; CLOCK1                                      ; Untyped                                           ;
+; INDATA_ACLR_B                      ; NONE                                        ; Untyped                                           ;
+; WRCONTROL_ACLR_B                   ; NONE                                        ; Untyped                                           ;
+; ADDRESS_ACLR_B                     ; NONE                                        ; Untyped                                           ;
+; OUTDATA_ACLR_B                     ; NONE                                        ; Untyped                                           ;
+; RDCONTROL_ACLR_B                   ; NONE                                        ; Untyped                                           ;
+; BYTEENA_ACLR_B                     ; NONE                                        ; Untyped                                           ;
+; WIDTH_BYTEENA_A                    ; 1                                           ; Untyped                                           ;
+; WIDTH_BYTEENA_B                    ; 1                                           ; Untyped                                           ;
+; RAM_BLOCK_TYPE                     ; AUTO                                        ; Untyped                                           ;
+; BYTE_SIZE                          ; 8                                           ; Untyped                                           ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                   ; Untyped                                           ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                        ; Untyped                                           ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                        ; Untyped                                           ;
+; INIT_FILE                          ; db/lab8.ram0_Register_File_605be989.hdl.mif ; Untyped                                           ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                      ; Untyped                                           ;
+; MAXIMUM_DEPTH                      ; 0                                           ; Untyped                                           ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                      ; Untyped                                           ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                      ; Untyped                                           ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                      ; Untyped                                           ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                      ; Untyped                                           ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                             ; Untyped                                           ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                             ; Untyped                                           ;
+; ENABLE_ECC                         ; FALSE                                       ; Untyped                                           ;
+; DEVICE_FAMILY                      ; Cyclone II                                  ; Untyped                                           ;
+; CBXI_PARAMETER                     ; altsyncram_l3j1                             ; Untyped                                           ;
++------------------------------------+---------------------------------------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                                                ;
++-------------------------------------------+-------------------------------------------------------------------------------------+
+; Name                                      ; Value                                                                               ;
++-------------------------------------------+-------------------------------------------------------------------------------------+
+; Number of entity instances                ; 2                                                                                   ;
+; Entity Instance                           ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|altsyncram:Regfile_rtl_0 ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                                                           ;
+;     -- WIDTH_A                            ; 32                                                                                  ;
+;     -- NUMWORDS_A                         ; 32                                                                                  ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                        ;
+;     -- WIDTH_B                            ; 32                                                                                  ;
+;     -- NUMWORDS_B                         ; 32                                                                                  ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                                                                              ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                        ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                           ;
+; Entity Instance                           ; Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|altsyncram:Regfile_rtl_1 ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                                                           ;
+;     -- WIDTH_A                            ; 32                                                                                  ;
+;     -- NUMWORDS_A                         ; 32                                                                                  ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                        ;
+;     -- WIDTH_B                            ; 32                                                                                  ;
+;     -- NUMWORDS_B                         ; 32                                                                                  ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                                                                              ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                        ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                           ;
++-------------------------------------------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Datapath_Multi_cycle_Processor:comb_30|Mux4_32_bit:comp19" ;
++------+-------+----------+-------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                     ;
++------+-------+----------+-------------------------------------------------------------+
+; in3  ; Input ; Info     ; Stuck at GND                                                ;
++------+-------+----------+-------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp16" ;
++-------+-------+----------+------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                    ;
++-------+-------+----------+------------------------------------------------------------+
+; write ; Input ; Info     ; Stuck at VCC                                               ;
++-------+-------+----------+------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Datapath_Multi_cycle_Processor:comb_30|Mux4_32_bit:comp14" ;
++------------+-------+----------+-------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                               ;
++------------+-------+----------+-------------------------------------------------------+
+; in1[31..3] ; Input ; Info     ; Stuck at GND                                          ;
+; in1[1..0]  ; Input ; Info     ; Stuck at GND                                          ;
+; in1[2]     ; Input ; Info     ; Stuck at VCC                                          ;
++------------+-------+----------+-------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp12" ;
++-------+-------+----------+------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                    ;
++-------+-------+----------+------------------------------------------------------------+
+; write ; Input ; Info     ; Stuck at VCC                                               ;
++-------+-------+----------+------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp11" ;
++-------+-------+----------+------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                    ;
++-------+-------+----------+------------------------------------------------------------+
+; write ; Input ; Info     ; Stuck at VCC                                               ;
++-------+-------+----------+------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp5" ;
++-------+-------+----------+-----------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                   ;
++-------+-------+----------+-----------------------------------------------------------+
+; write ; Input ; Info     ; Stuck at VCC                                              ;
++-------+-------+----------+-----------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Datapath_Multi_cycle_Processor:comb_30"                                                            ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                ; Type   ; Severity ; Details                                                                             ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; PCWr                ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; IRwrite             ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; MemRead             ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; PC_in[31..25]       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; PC_out              ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Mem_Read_data       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; instruction         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; MDR_out             ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; mux_2_out[31..8]    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; B_data              ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; ALU_in_B[31..8]     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; ALU_in_A[31..8]     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; ALU_out             ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; ALU_out_hold[31..8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Jump_addr           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; jump_28_bit         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Sat Jun 22 13:49:24 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
+Info: Found 17 design units, including 17 entities, in source file lab8.v
+    Info: Found entity 1: lab8
+    Info: Found entity 2: Datapath_Multi_cycle_Processor
+    Info: Found entity 3: controller
+    Info: Found entity 4: ALU_Control
+    Info: Found entity 5: Mux_5_bit
+    Info: Found entity 6: Sign_Extension
+    Info: Found entity 7: Program_Counter
+    Info: Found entity 8: alu
+    Info: Found entity 9: Register_File
+    Info: Found entity 10: holding_reg
+    Info: Found entity 11: Mux_32_bit
+    Info: Found entity 12: shift_left_2
+    Info: Found entity 13: concate
+    Info: Found entity 14: Mux4_32_bit
+    Info: Found entity 15: shift_left_2_28bit
+    Info: Found entity 16: Data_Memory
+    Info: Found entity 17: hex_ssd
+Critical Warning (10846): Verilog HDL Instantiation warning at lab8.v(23): instance has no name
+Info: Elaborating entity "lab8" for the top level hierarchy
+Info: Elaborating entity "hex_ssd" for hierarchy "hex_ssd:C1"
+Info: Elaborating entity "Datapath_Multi_cycle_Processor" for hierarchy "Datapath_Multi_cycle_Processor:comb_30"
+Info: Elaborating entity "Program_Counter" for hierarchy "Datapath_Multi_cycle_Processor:comb_30|Program_Counter:comp1"
+Info: Elaborating entity "Mux_32_bit" for hierarchy "Datapath_Multi_cycle_Processor:comb_30|Mux_32_bit:comp2"
+Info: Elaborating entity "Data_Memory" for hierarchy "Datapath_Multi_cycle_Processor:comb_30|Data_Memory:comp3"
+Warning (10175): Verilog HDL warning at lab8.v(717): ignoring unsupported system task
+Info: Elaborating entity "holding_reg" for hierarchy "Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp4"
+Info: Elaborating entity "Register_File" for hierarchy "Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7"
+Warning (10235): Verilog HDL Always Construct warning at lab8.v(599): variable "read_addr_1" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at lab8.v(602): variable "read_addr_1" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at lab8.v(609): variable "read_addr_2" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at lab8.v(612): variable "read_addr_2" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10175): Verilog HDL warning at lab8.v(621): ignoring unsupported system task
+Info: Elaborating entity "Mux_5_bit" for hierarchy "Datapath_Multi_cycle_Processor:comb_30|Mux_5_bit:comp8"
+Info: Elaborating entity "Sign_Extension" for hierarchy "Datapath_Multi_cycle_Processor:comb_30|Sign_Extension:comp9"
+Info: Elaborating entity "shift_left_2" for hierarchy "Datapath_Multi_cycle_Processor:comb_30|shift_left_2:comp10"
+Info: Elaborating entity "Mux4_32_bit" for hierarchy "Datapath_Multi_cycle_Processor:comb_30|Mux4_32_bit:comp14"
+Info: Elaborating entity "alu" for hierarchy "Datapath_Multi_cycle_Processor:comb_30|alu:comp15"
+Warning (10240): Verilog HDL Always Construct warning at lab8.v(555): inferring latch(es) for variable "zero", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "zero" at lab8.v(555)
+Info: Elaborating entity "shift_left_2_28bit" for hierarchy "Datapath_Multi_cycle_Processor:comb_30|shift_left_2_28bit:comp17"
+Info: Elaborating entity "concate" for hierarchy "Datapath_Multi_cycle_Processor:comb_30|concate:comp18"
+Info: Elaborating entity "controller" for hierarchy "Datapath_Multi_cycle_Processor:comb_30|controller:comp20"
+Warning (10175): Verilog HDL warning at lab8.v(179): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(197): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(214): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(240): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(244): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(249): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(254): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(256): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(274): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(292): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(310): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(329): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(348): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(367): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(386): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(404): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(420): ignoring unsupported system task
+Info: Elaborating entity "ALU_Control" for hierarchy "Datapath_Multi_cycle_Processor:comb_30|ALU_Control:comp21"
+Warning (10175): Verilog HDL warning at lab8.v(451): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(457): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(463): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(469): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(475): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(480): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(485): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(490): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(495): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(500): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at lab8.v(505): ignoring unsupported system task
+Warning: Inferred RAM node "Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Warning: Inferred RAM node "Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Info: Found 1 instances of uninferred RAM logic
+    Info: RAM logic "Datapath_Multi_cycle_Processor:comb_30|Data_Memory:comp3|DMemory" is uninferred due to asynchronous read logic
+Info: Inferred 2 megafunctions from design logic
+    Info: Inferred altsyncram megafunction from the following design logic: "Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~0" 
+        Info: Parameter OPERATION_MODE set to DUAL_PORT
+        Info: Parameter WIDTH_A set to 32
+        Info: Parameter WIDTHAD_A set to 5
+        Info: Parameter NUMWORDS_A set to 32
+        Info: Parameter WIDTH_B set to 32
+        Info: Parameter WIDTHAD_B set to 5
+        Info: Parameter NUMWORDS_B set to 32
+        Info: Parameter ADDRESS_ACLR_A set to NONE
+        Info: Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info: Parameter ADDRESS_ACLR_B set to NONE
+        Info: Parameter OUTDATA_ACLR_B set to NONE
+        Info: Parameter ADDRESS_REG_B set to CLOCK0
+        Info: Parameter INDATA_ACLR_A set to NONE
+        Info: Parameter WRCONTROL_ACLR_A set to NONE
+        Info: Parameter RAM_BLOCK_TYPE set to AUTO
+        Info: Parameter INIT_FILE set to db/lab8.ram0_Register_File_605be989.hdl.mif
+    Info: Inferred altsyncram megafunction from the following design logic: "Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|Regfile~1" 
+        Info: Parameter OPERATION_MODE set to DUAL_PORT
+        Info: Parameter WIDTH_A set to 32
+        Info: Parameter WIDTHAD_A set to 5
+        Info: Parameter NUMWORDS_A set to 32
+        Info: Parameter WIDTH_B set to 32
+        Info: Parameter WIDTHAD_B set to 5
+        Info: Parameter NUMWORDS_B set to 32
+        Info: Parameter ADDRESS_ACLR_A set to NONE
+        Info: Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info: Parameter ADDRESS_ACLR_B set to NONE
+        Info: Parameter OUTDATA_ACLR_B set to NONE
+        Info: Parameter ADDRESS_REG_B set to CLOCK0
+        Info: Parameter INDATA_ACLR_A set to NONE
+        Info: Parameter WRCONTROL_ACLR_A set to NONE
+        Info: Parameter RAM_BLOCK_TYPE set to AUTO
+        Info: Parameter INIT_FILE set to db/lab8.ram0_Register_File_605be989.hdl.mif
+Info: Elaborated megafunction instantiation "Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|altsyncram:Regfile_rtl_0"
+Info: Instantiated megafunction "Datapath_Multi_cycle_Processor:comb_30|Register_File:comp7|altsyncram:Regfile_rtl_0" with the following parameter:
+    Info: Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info: Parameter "WIDTH_A" = "32"
+    Info: Parameter "WIDTHAD_A" = "5"
+    Info: Parameter "NUMWORDS_A" = "32"
+    Info: Parameter "WIDTH_B" = "32"
+    Info: Parameter "WIDTHAD_B" = "5"
+    Info: Parameter "NUMWORDS_B" = "32"
+    Info: Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info: Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info: Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info: Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info: Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info: Parameter "INDATA_ACLR_A" = "NONE"
+    Info: Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info: Parameter "RAM_BLOCK_TYPE" = "AUTO"
+    Info: Parameter "INIT_FILE" = "db/lab8.ram0_Register_File_605be989.hdl.mif"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_l3j1.tdf
+    Info: Found entity 1: altsyncram_l3j1
+Warning: Latch Datapath_Multi_cycle_Processor:comb_30|alu:comp15|zero has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal Datapath_Multi_cycle_Processor:comb_30|controller:comp20|ALUSrcB[0]
+Info: Registers with preset signals will power-up high
+Info: DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR[17]" is stuck at GND
+Info: 4 registers lost all their fanouts during netlist optimizations. The first 4 are displayed below.
+    Info: Register "Datapath_Multi_cycle_Processor:comb_30|controller:comp20|state~27" lost all its fanouts during netlist optimizations.
+    Info: Register "Datapath_Multi_cycle_Processor:comb_30|controller:comp20|state~28" lost all its fanouts during netlist optimizations.
+    Info: Register "Datapath_Multi_cycle_Processor:comb_30|controller:comp20|state~29" lost all its fanouts during netlist optimizations.
+    Info: Register "Datapath_Multi_cycle_Processor:comb_30|controller:comp20|state~30" lost all its fanouts during netlist optimizations.
+Info: Generated suppressed messages file D:/Year 3/Semester 2/DSD/lab/week7/lab8/lab8.map.smsg
+Warning: Design contains 20 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[0]"
+    Warning (15610): No output dependent on input pin "SW[1]"
+    Warning (15610): No output dependent on input pin "SW[2]"
+    Warning (15610): No output dependent on input pin "SW[3]"
+    Warning (15610): No output dependent on input pin "SW[4]"
+    Warning (15610): No output dependent on input pin "SW[5]"
+    Warning (15610): No output dependent on input pin "SW[6]"
+    Warning (15610): No output dependent on input pin "SW[7]"
+    Warning (15610): No output dependent on input pin "SW[8]"
+    Warning (15610): No output dependent on input pin "SW[9]"
+    Warning (15610): No output dependent on input pin "SW[10]"
+    Warning (15610): No output dependent on input pin "SW[11]"
+    Warning (15610): No output dependent on input pin "SW[12]"
+    Warning (15610): No output dependent on input pin "SW[13]"
+    Warning (15610): No output dependent on input pin "SW[14]"
+    Warning (15610): No output dependent on input pin "SW[15]"
+    Warning (15610): No output dependent on input pin "SW[16]"
+    Warning (15610): No output dependent on input pin "KEY[0]"
+    Warning (15610): No output dependent on input pin "KEY[1]"
+    Warning (15610): No output dependent on input pin "KEY[3]"
+Info: Implemented 4348 device resources after synthesis - the final resource count might be different
+    Info: Implemented 22 input pins
+    Info: Implemented 82 output pins
+    Info: Implemented 4180 logic cells
+    Info: Implemented 64 RAM segments
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 63 warnings
+    Info: Peak virtual memory: 241 megabytes
+    Info: Processing ended: Sat Jun 22 13:49:30 2024
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:04
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/Year 3/Semester 2/DSD/lab/week7/lab8/lab8.map.smsg.
+
+

@@ -1,0 +1,29 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- entity declaration
+entity mux_2to1 is
+  port (
+    data0 : in  STD_LOGIC;
+    data1 : in  STD_LOGIC;
+    sel   : in  STD_LOGIC;
+    output : out STD_LOGIC
+  );
+end entity mux_2to1;
+
+-- architecture behavior
+architecture Behavioral of mux_2to1 is
+
+begin
+
+  -- process block
+  process(data0, data1, sel)
+  begin
+    if sel = '0' then
+      output <= data0;
+    else
+      output <= data1;
+    end if;
+  end process;
+
+end architecture Behavioral;

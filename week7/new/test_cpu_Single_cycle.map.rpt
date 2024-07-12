@@ -1,0 +1,164 @@
+Analysis & Synthesis report for test_cpu_Single_cycle
+Thu Jun 13 14:40:23 2024
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++------------------------------------+------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Thu Jun 13 14:40:23 2024        ;
+; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Full Version ;
+; Revision Name                      ; test_cpu_Single_cycle                    ;
+; Top-level Entity Name              ; test_cpu_Single_cycle                    ;
+; Family                             ; Cyclone II                               ;
+; Total logic elements               ; N/A until Partition Merge                ;
+;     Total combinational functions  ; N/A until Partition Merge                ;
+;     Dedicated logic registers      ; N/A until Partition Merge                ;
+; Total registers                    ; N/A until Partition Merge                ;
+; Total pins                         ; N/A until Partition Merge                ;
+; Total virtual pins                 ; N/A until Partition Merge                ;
+; Total memory bits                  ; N/A until Partition Merge                ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                ;
+; Total PLLs                         ; N/A until Partition Merge                ;
++------------------------------------+------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                  ;
++----------------------------------------------------------------+-----------------------+-----------------------+
+; Option                                                         ; Setting               ; Default Value         ;
++----------------------------------------------------------------+-----------------------+-----------------------+
+; Device                                                         ; EP2C35F672C6          ;                       ;
+; Top-level entity name                                          ; test_cpu_Single_cycle ; test_cpu_Single_cycle ;
+; Family name                                                    ; Cyclone II            ; Stratix II            ;
+; Use Generated Physical Constraints File                        ; Off                   ;                       ;
+; Use smart compilation                                          ; Off                   ; Off                   ;
+; Restructure Multiplexers                                       ; Auto                  ; Auto                  ;
+; Create Debugging Nodes for IP Cores                            ; Off                   ; Off                   ;
+; Preserve fewer node names                                      ; On                    ; On                    ;
+; Disable OpenCore Plus hardware evaluation                      ; Off                   ; Off                   ;
+; Verilog Version                                                ; Verilog_2001          ; Verilog_2001          ;
+; VHDL Version                                                   ; VHDL93                ; VHDL93                ;
+; State Machine Processing                                       ; Auto                  ; Auto                  ;
+; Safe State Machine                                             ; Off                   ; Off                   ;
+; Extract Verilog State Machines                                 ; On                    ; On                    ;
+; Extract VHDL State Machines                                    ; On                    ; On                    ;
+; Ignore Verilog initial constructs                              ; Off                   ; Off                   ;
+; Iteration limit for constant Verilog loops                     ; 5000                  ; 5000                  ;
+; Iteration limit for non-constant Verilog loops                 ; 250                   ; 250                   ;
+; Add Pass-Through Logic to Inferred RAMs                        ; On                    ; On                    ;
+; Parallel Synthesis                                             ; Off                   ; Off                   ;
+; DSP Block Balancing                                            ; Auto                  ; Auto                  ;
+; NOT Gate Push-Back                                             ; On                    ; On                    ;
+; Power-Up Don't Care                                            ; On                    ; On                    ;
+; Remove Redundant Logic Cells                                   ; Off                   ; Off                   ;
+; Remove Duplicate Registers                                     ; On                    ; On                    ;
+; Ignore CARRY Buffers                                           ; Off                   ; Off                   ;
+; Ignore CASCADE Buffers                                         ; Off                   ; Off                   ;
+; Ignore GLOBAL Buffers                                          ; Off                   ; Off                   ;
+; Ignore ROW GLOBAL Buffers                                      ; Off                   ; Off                   ;
+; Ignore LCELL Buffers                                           ; Off                   ; Off                   ;
+; Ignore SOFT Buffers                                            ; On                    ; On                    ;
+; Limit AHDL Integers to 32 Bits                                 ; Off                   ; Off                   ;
+; Optimization Technique                                         ; Balanced              ; Balanced              ;
+; Carry Chain Length                                             ; 70                    ; 70                    ;
+; Auto Carry Chains                                              ; On                    ; On                    ;
+; Auto Open-Drain Pins                                           ; On                    ; On                    ;
+; Perform WYSIWYG Primitive Resynthesis                          ; Off                   ; Off                   ;
+; Auto ROM Replacement                                           ; On                    ; On                    ;
+; Auto RAM Replacement                                           ; On                    ; On                    ;
+; Auto Shift Register Replacement                                ; Auto                  ; Auto                  ;
+; Auto Clock Enable Replacement                                  ; On                    ; On                    ;
+; Strict RAM Replacement                                         ; Off                   ; Off                   ;
+; Allow Synchronous Control Signals                              ; On                    ; On                    ;
+; Force Use of Synchronous Clear Signals                         ; Off                   ; Off                   ;
+; Auto RAM to Logic Cell Conversion                              ; Off                   ; Off                   ;
+; Auto Resource Sharing                                          ; Off                   ; Off                   ;
+; Allow Any RAM Size For Recognition                             ; Off                   ; Off                   ;
+; Allow Any ROM Size For Recognition                             ; Off                   ; Off                   ;
+; Allow Any Shift Register Size For Recognition                  ; Off                   ; Off                   ;
+; Use LogicLock Constraints during Resource Balancing            ; On                    ; On                    ;
+; Ignore translate_off and synthesis_off directives              ; Off                   ; Off                   ;
+; Timing-Driven Synthesis                                        ; Off                   ; Off                   ;
+; Show Parameter Settings Tables in Synthesis Report             ; On                    ; On                    ;
+; Ignore Maximum Fan-Out Assignments                             ; Off                   ; Off                   ;
+; Synchronization Register Chain Length                          ; 2                     ; 2                     ;
+; PowerPlay Power Optimization                                   ; Normal compilation    ; Normal compilation    ;
+; HDL message level                                              ; Level2                ; Level2                ;
+; Suppress Register Optimization Related Messages                ; Off                   ; Off                   ;
+; Number of Removed Registers Reported in Synthesis Report       ; 100                   ; 100                   ;
+; Number of Inverted Registers Reported in Synthesis Report      ; 100                   ; 100                   ;
+; Clock MUX Protection                                           ; On                    ; On                    ;
+; Auto Gated Clock Conversion                                    ; Off                   ; Off                   ;
+; Block Design Naming                                            ; Auto                  ; Auto                  ;
+; SDC constraint protection                                      ; Off                   ; Off                   ;
+; Synthesis Effort                                               ; Auto                  ; Auto                  ;
+; Allows Asynchronous Clear Usage For Shift Register Replacement ; On                    ; On                    ;
+; Analysis & Synthesis Message Level                             ; Medium                ; Medium                ;
++----------------------------------------------------------------+-----------------------+-----------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Thu Jun 13 14:40:22 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test_cpu_Single_cycle -c test_cpu_Single_cycle
+Error (10170): Verilog HDL syntax error at test_cpu_Single_cycle.v(6) near text "wire";  expecting an identifier ("wire" is a reserved keyword ) File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 6
+Error (10170): Verilog HDL syntax error at test_cpu_Single_cycle.v(11) near text "?";  expecting "," File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 11
+Error (10112): Ignored design unit "test_cpu_Single_cycle" at test_cpu_Single_cycle.v(2) due to previous errors File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 2
+Error (10170): Verilog HDL syntax error at test_cpu_Single_cycle.v(22) near text "output";  expecting an identifier ("output" is a reserved keyword ) File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 22
+Error (10112): Ignored design unit "CompleteProcessor" at test_cpu_Single_cycle.v(18) due to previous errors File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 18
+Error (10112): Ignored design unit "Control" at test_cpu_Single_cycle.v(50) due to previous errors File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 50
+Error (10112): Ignored design unit "Program_Counter" at test_cpu_Single_cycle.v(81) due to previous errors File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 81
+Error (10112): Ignored design unit "Adder32Bit" at test_cpu_Single_cycle.v(94) due to previous errors File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 94
+Error (10112): Ignored design unit "alu" at test_cpu_Single_cycle.v(104) due to previous errors File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 104
+Error (10170): Verilog HDL syntax error at test_cpu_Single_cycle.v(149) near text "x33";  expecting ";" File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 149
+Error (10170): Verilog HDL syntax error at test_cpu_Single_cycle.v(150) near text "x22";  expecting ";" File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 150
+Error (10170): Verilog HDL syntax error at test_cpu_Single_cycle.v(152) near text "x21";  expecting ";" File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 152
+Error (10170): Verilog HDL syntax error at test_cpu_Single_cycle.v(153) near text "x77";  expecting ";" File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 153
+Error (10170): Verilog HDL syntax error at test_cpu_Single_cycle.v(154) near text "x99";  expecting ";" File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 154
+Error (10170): Verilog HDL syntax error at test_cpu_Single_cycle.v(155) near text "x55";  expecting ";" File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 155
+Error (10170): Verilog HDL syntax error at test_cpu_Single_cycle.v(156) near text "x55";  expecting ";" File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 156
+Error (10112): Ignored design unit "Register_File" at test_cpu_Single_cycle.v(136) due to previous errors File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 136
+Error (10112): Ignored design unit "Data_Memory" at test_cpu_Single_cycle.v(190) due to previous errors File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 190
+Error (10112): Ignored design unit "Sign_Extension_16_to_8" at test_cpu_Single_cycle.v(211) due to previous errors File: D:/Year 3/Semester 2/DSD/lab/week7/test/test_cpu_Single_cycle.v Line: 211
+Info: Found 0 design units, including 0 entities, in source file ../test/test_cpu_Single_cycle.v
+Error: Quartus II Analysis & Synthesis was unsuccessful. 19 errors, 0 warnings
+    Error: Peak virtual memory: 228 megabytes
+    Error: Processing ended: Thu Jun 13 14:40:23 2024
+    Error: Elapsed time: 00:00:01
+    Error: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jun 06 16:28:36 2024
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : Muti_Cycle_Processor_FPGA
+Top-level Entity Name : Muti_Cycle_Processor_FPGA
+Family : Cyclone II
+Total logic elements : 3,323
+    Total combinational functions : 1,677
+    Dedicated logic registers : 1,879
+Total registers : 1879
+Total pins : 104
+Total virtual pins : 0
+Total memory bits : 1,664
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

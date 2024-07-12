@@ -1,0 +1,20 @@
+module lab1(SW,LEDG,LEDR);
+	input[17:0] SW;
+	output[7:0] LEDG;
+	output[17:0] LEDR;
+	assign LEDR=SW;
+	allgate_DF DUT(SW[1],SW[2],LEDG[6],LEDG[5],LEDG[4],LEDG[3],LEDG[2],LEDG[1],LEDG[0]);
+endmodule
+
+module allgate_DF ( a, b, yand,yor,ynot,ynand,ynor,yxor,yxnor );
+input a,b;
+output yand, yor, ynot, ynand, ynor, yxor, yxnor;
+
+assign yand = a & b;		// AND Operation
+assign yor = a | b;		// OR Operation
+assign ynot = ~a ;		// NOT Operation
+assign ynand = ~(a & b);	// NAND Operation
+assign ynor = ~(a | b);		//NOR Operation
+assign yxor = a ^ b;		//XOR Operation
+assign yxnor =~(a^b);		//XNOR Operation
+endmodule				// END of the module

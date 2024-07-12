@@ -1,0 +1,35 @@
+|Program_Counter
+clk => PC_out[0]~reg0.CLK
+clk => PC_out[1]~reg0.CLK
+clk => PC_out[2]~reg0.CLK
+clk => PC_out[3]~reg0.CLK
+clk => PC_out[4]~reg0.CLK
+clk => PC_out[5]~reg0.CLK
+clk => PC_out[6]~reg0.CLK
+clk => PC_out[7]~reg0.CLK
+reset => PC_out[0]~reg0.ACLR
+reset => PC_out[1]~reg0.ACLR
+reset => PC_out[2]~reg0.ACLR
+reset => PC_out[3]~reg0.ACLR
+reset => PC_out[4]~reg0.ACLR
+reset => PC_out[5]~reg0.ACLR
+reset => PC_out[6]~reg0.ACLR
+reset => PC_out[7]~reg0.ACLR
+PC_in[0] => PC_out[0]~reg0.DATAIN
+PC_in[1] => PC_out[1]~reg0.DATAIN
+PC_in[2] => PC_out[2]~reg0.DATAIN
+PC_in[3] => PC_out[3]~reg0.DATAIN
+PC_in[4] => PC_out[4]~reg0.DATAIN
+PC_in[5] => PC_out[5]~reg0.DATAIN
+PC_in[6] => PC_out[6]~reg0.DATAIN
+PC_in[7] => PC_out[7]~reg0.DATAIN
+PC_out[0] <= PC_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PC_out[1] <= PC_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PC_out[2] <= PC_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PC_out[3] <= PC_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PC_out[4] <= PC_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PC_out[5] <= PC_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PC_out[6] <= PC_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PC_out[7] <= PC_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,581 @@
+Version 9.0 Build 132 02/25/2009 SJ Full Version
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+test
+# storage
+db|test.(0).cnf
+db|test.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+C:|Users|ACER|Downloads|test.v
+22762c6f9e69c89872668f4f4aa5ede7
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+hex_ssd
+# storage
+db|test.(1).cnf
+db|test.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+C:|Users|ACER|Downloads|test.v
+22762c6f9e69c89872668f4f4aa5ede7
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+hex_ssd:C1
+hex_ssd:C2
+hex_ssd:C3
+hex_ssd:C4
+hex_ssd:C5
+hex_ssd:C6
+}
+# macro_sequence
+
+# end
+# entity
+R_Type_Proc
+# storage
+db|test.(2).cnf
+db|test.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+C:|Users|ACER|Downloads|test.v
+22762c6f9e69c89872668f4f4aa5ede7
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+R_Type_Proc:DUT
+}
+# macro_sequence
+
+# end
+# entity
+Program_Counter
+# storage
+db|test.(3).cnf
+db|test.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+C:|Users|ACER|Downloads|test.v
+22762c6f9e69c89872668f4f4aa5ede7
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+R_Type_Proc:DUT|Program_Counter:C1
+}
+# macro_sequence
+
+# end
+# entity
+Adder32Bit
+# storage
+db|test.(4).cnf
+db|test.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+C:|Users|ACER|Downloads|test.v
+22762c6f9e69c89872668f4f4aa5ede7
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+R_Type_Proc:DUT|Adder32Bit:C2
+R_Type_Proc:DUT|Adder32Bit:C4
+}
+# macro_sequence
+
+# end
+# entity
+Mux_32_bit
+# storage
+db|test.(5).cnf
+db|test.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+C:|Users|ACER|Downloads|test.v
+22762c6f9e69c89872668f4f4aa5ede7
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+N
+32
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+R_Type_Proc:DUT|Mux_32_bit:C3
+R_Type_Proc:DUT|Mux_32_bit:C8
+R_Type_Proc:DUT|Mux_32_bit:C11
+R_Type_Proc:DUT|Mux_32_bit:comp15
+}
+# macro_sequence
+
+# end
+# entity
+Instruction_Memory
+# storage
+db|test.(6).cnf
+db|test.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+C:|Users|ACER|Downloads|test.v
+22762c6f9e69c89872668f4f4aa5ede7
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+R_Type_Proc:DUT|Instruction_Memory:C5
+}
+# macro_sequence
+
+# end
+# entity
+Mux_5_bit
+# storage
+db|test.(7).cnf
+db|test.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+C:|Users|ACER|Downloads|test.v
+22762c6f9e69c89872668f4f4aa5ede7
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+N
+5
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+R_Type_Proc:DUT|Mux_5_bit:C13
+}
+# macro_sequence
+
+# end
+# entity
+Register_File
+# storage
+db|test.(8).cnf
+db|test.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+C:|Users|ACER|Downloads|test.v
+22762c6f9e69c89872668f4f4aa5ede7
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+R_Type_Proc:DUT|Register_File:C6
+}
+# macro_sequence
+
+# end
+# entity
+Sign_Extension
+# storage
+db|test.(9).cnf
+db|test.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+C:|Users|ACER|Downloads|test.v
+22762c6f9e69c89872668f4f4aa5ede7
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+R_Type_Proc:DUT|Sign_Extension:C7
+}
+# macro_sequence
+
+# end
+# entity
+alu
+# storage
+db|test.(10).cnf
+db|test.(10).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+C:|Users|ACER|Downloads|test.v
+22762c6f9e69c89872668f4f4aa5ede7
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+ALU_OP_ADD
+000
+PARAMETER_UNSIGNED_BIN
+DEF
+ALU_OP_SUB
+001
+PARAMETER_UNSIGNED_BIN
+DEF
+ALU_OP_AND
+010
+PARAMETER_UNSIGNED_BIN
+DEF
+ALU_OP_OR
+011
+PARAMETER_UNSIGNED_BIN
+DEF
+ALU_OP_XOR
+100
+PARAMETER_UNSIGNED_BIN
+DEF
+ALU_OP_LW
+101
+PARAMETER_UNSIGNED_BIN
+DEF
+ALU_OP_SW
+110
+PARAMETER_UNSIGNED_BIN
+DEF
+ALU_OP_BEQ
+111
+PARAMETER_UNSIGNED_BIN
+DEF
+}
+# hierarchies {
+R_Type_Proc:DUT|alu:C9
+}
+# macro_sequence
+
+# end
+# entity
+Data_Memory
+# storage
+db|test.(11).cnf
+db|test.(11).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+C:|Users|ACER|Downloads|test.v
+22762c6f9e69c89872668f4f4aa5ede7
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+R_Type_Proc:DUT|Data_Memory:C10
+}
+# macro_sequence
+
+# end
+# entity
+Control
+# storage
+db|test.(12).cnf
+db|test.(12).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+C:|Users|ACER|Downloads|test.v
+22762c6f9e69c89872668f4f4aa5ede7
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+R_Type_Proc:DUT|Control:C12
+}
+# macro_sequence
+
+# end
+# entity
+Sign_Extension_26
+# storage
+db|test.(13).cnf
+db|test.(13).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+C:|Users|ACER|Downloads|test.v
+22762c6f9e69c89872668f4f4aa5ede7
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+R_Type_Proc:DUT|Sign_Extension_26:comp14
+}
+# macro_sequence
+
+# end
+# complete
+

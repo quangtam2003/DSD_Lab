@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Apr 11 16:40:50 2024
+Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+Revision Name : ex3_multiplexer
+Top-level Entity Name : ex3_multiplexer
+Family : Cyclone IV E
+Total logic elements : 1
+    Total combinational functions : 1
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 40
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

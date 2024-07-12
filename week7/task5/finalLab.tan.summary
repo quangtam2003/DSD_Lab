@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 24.327 ns
+From           : R_Type_Proc:DUT|Program_Counter:C1|PC_out[0]
+To             : HEX1[0]
+From Clock     : KEY[1]
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'KEY[1]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 18.55 MHz ( period = 53.916 ns )
+From           : R_Type_Proc:DUT|Data_Memory:C10|DMemory~163
+To             : R_Type_Proc:DUT|Register_File:C6|Regfile~707
+From Clock     : KEY[1]
+To Clock       : KEY[1]
+Failed Paths   : 0
+
+Type           : Clock Hold: 'KEY[1]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : R_Type_Proc:DUT|Register_File:C6|Regfile~39
+To             : R_Type_Proc:DUT|Data_Memory:C10|DMemory~1287
+From Clock     : KEY[1]
+To Clock       : KEY[1]
+Failed Paths   : 10000
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 10000
+
+--------------------------------------------------------------------------------------
+

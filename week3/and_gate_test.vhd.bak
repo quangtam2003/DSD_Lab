@@ -1,0 +1,37 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY and_test IS
+	PORT (SW: IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+		  LEDR: OUT STD_LOGIC_VECTOR(15 DOWNTO 0); -- red LEDs
+		  LEDG: OUT STD_LOGIC_VECTOR(7 DOWNTO 0); -- Green LEDs
+	);
+END and_test;
+
+ARCHITECTURE Structure OF and_test IS
+	COMPONENT my_AND_gate
+		PORT (	A: in std_logic;
+	            B: in std_logic;
+	            Y: out std_logic);
+	END COMPONENT;
+
+	BEGIN
+		LEDR <= SW;
+		DUT: my_AND_gate PORT MAP (SW(1),SW(0), LEDG(0));
+		
+END Structure;
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity my_AND_gate is
+port(	A: in std_logic;
+	    B: in std_logic;
+	    Y: out std_logic
+);
+end my_AND_gate;  
+architecture dataflow of my_AND_gate is
+begin
+    Y <= A and B;
+end dataflow;

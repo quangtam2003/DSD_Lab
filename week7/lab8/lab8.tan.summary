@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 15.924 ns
+From           : Datapath_Multi_cycle_Processor:comb_30|controller:comp20|ALUSrcB[0]
+To             : LEDG[5]
+From Clock     : KEY[2]
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'KEY[2]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 105.20 MHz ( period = 9.506 ns )
+From           : Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp16|content[5]
+To             : Datapath_Multi_cycle_Processor:comb_30|holding_reg:comp4|content[30]
+From Clock     : KEY[2]
+To Clock       : KEY[2]
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
